@@ -16,11 +16,11 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 5
-      
-      
+    expected-client-renewal-interval-seconds: 15
+
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-   
